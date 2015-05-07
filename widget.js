@@ -44,7 +44,7 @@ function(Widget, defaultTemplates, navBehavior, layoutBehavior) {
             },
 
             initTemplate: function() {
-                var templateNum = this.options.template && this.options.template || 0;
+                var templateNum = (this.options && this.options.template) ? this.options.template : 0;
 
                 this.setTemplate(this._templates.list[templateNum].template);
 
@@ -76,7 +76,9 @@ function(Widget, defaultTemplates, navBehavior, layoutBehavior) {
 
                 // onCollectionChange means current collection has been modified
                 // should be done by the behavior automatically
-                var source = sources[this.options.collection];
+                if(this.options && this.options.collection){
+                    var source = sources[this.options.collection];
+                }
 
                 if (source) {
                     this._source = source;
