@@ -1,15 +1,20 @@
 {
     "name": "wListView",
-    "author": "4D",
+    "author": "Wakanda",
+    "contributors": [
+        "Stéphane Puybareau",
+        "Nicolas Ramz",
+        "Jonathan Argentiero"
+    ],
     "iconPath": "/icons/wListView.png",
-    "version": "1.0.1",
-    "copyright": "(c) 2013 4D",
+    "version": "1.0.2",
+    "copyright": "(c) 2015 Wakanda SAS",
     "repository": {
         "type": "git",
         "url": "https://github.com/Wakanda/wListView.git"
     },
     "keywords": ["wakanda", "widget"],
-    "engines": {"wakanda" : ">= 9"},
+    "engines": {"wakanda" : "<= 10"},
     "license": "MIT",
     "loadDependencies": [
         {"id": "Widget_V2"},
